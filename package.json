@@ -4,13 +4,12 @@
   "description": "unit testing common scenarios with tape",
   "main": "index.js",
   "scripts": {
-    "test": "babel-node ./test/index.js | faucet"
+    "test": "babel-node ./test/index.js | faucet",
+    "cover": "babel-node node_modules/.bin/isparta cover --report text --report html ./test/*_tape.js"
   },
   "author": "Marco Romero",
   "license": "MIT",
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel": "^5.8.21",
     "babel-eslint": "^4.0.7",
@@ -18,7 +17,7 @@
     "browserify": "^11.0.1",
     "faucet": "0.0.1",
     "http-server": "^0.8.0",
-    "tape": "^4.2.0",
-      "faucet": "0.0.1"
+    "istanbul": "^0.3.7",
+    "tape": "^4.2.0"
   }
 }
