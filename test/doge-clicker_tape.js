@@ -20,3 +20,11 @@ test('3 clicks should increase the counter by 3', expect=>{
     expect.end();
 });
 
+test('click(2), click(3), click(5) should increase the count to 10', expect =>{
+    const wow = doge();
+    wow.click(2);
+    wow.click(3);
+    wow.click(5);
+    expect.equal(wow.count, 10, 'Much click, so number, wow');
+    expect.end();
+});
